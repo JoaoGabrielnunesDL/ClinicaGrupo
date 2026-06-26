@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/pacientes")
+@RequestMapping("/api/agendamento/pacientes")
 @Tag(name = "Agendamento - Pacientes", description = "Endpoints de Pacientes")
 public class PacienteController {
 

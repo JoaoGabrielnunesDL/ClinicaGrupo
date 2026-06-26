@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping("/api/consultas")
+@RequestMapping("/api/agendamento/consultas")
 @Tag(name = "Agendamento - Consultas", description = "Endpoints de Consultas")
 public class ConsultaController {
 
