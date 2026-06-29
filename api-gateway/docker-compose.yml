@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+  # O Banco de Dados único PostgreSQL para todo o grupo usar
   banco-dados:
     image: postgres:15
     container_name: clinica_postgres
@@ -12,6 +13,15 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  # API Gateway centralizador
+  api-gateway:
+    build: .
+    container_name: clinica_gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - banco-dados
 
 volumes:
   postgres_data:

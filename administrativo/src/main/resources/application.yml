@@ -1,5 +1,5 @@
 # ===================================================================
-# Módulo: administrativo
+# Mï¿½dulo: administrativo
 # ===================================================================
 
 server:
@@ -15,8 +15,8 @@ spring:
   # Banco de Dados: PostgreSQL
   # ===================================================================
   datasource:
-    url: jdbc:postgresql://localhost:5432/clinica_administrativo
-    username: postgres  # Ajuste com o seu usuário do Postgres local, se for diferente
+    url: jdbc:postgresql://localhost:5432/clinica_medica
+    username: postgres  # Ajuste com o seu usuï¿½rio do Postgres local, se for diferente
     password: root      # Ajuste com a sua senha do Postgres local
     driver-class-name: org.postgresql.Driver
 
