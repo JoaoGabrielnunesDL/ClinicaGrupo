@@ -38,3 +38,16 @@ Os testes foram estruturados na porta central do API Gateway (`8080`) para valid
 3. Selecione o arquivo de coleção JSON deste repositório (assim que for desenvolvido).
 4. Configure a variável de ambiente `baseUrl` para `http://localhost:8080`.
 5. Clique em **Run Collection** para executar todos os testes automatizados de uma vez.
+
+## 🚀 Como Rodar o Ecossistema Localmente
+
+Para validar os testes automatizados do Postman descritos acima, execute as aplicações no IntelliJ seguindo rigorosamente esta ordem padrão:
+1. **`ApiGatewayApplication`** (Porta `8080`)
+2. **`AdministrativoApplication`** (Porta `8081`)
+3. **`AgendamentoApplication`** (Porta `8082`)
+4. **`AtendimentoApplication`** (Porta `8083`)
+
+### 🔑 Credenciais de Autenticação (Spring Security)
+Ao acessar os endpoints via navegador ou ferramentas de teste, utilize as credenciais abaixo na janela de login:
+* **Usuário:** `admin`
+* **Senha:** `123`
