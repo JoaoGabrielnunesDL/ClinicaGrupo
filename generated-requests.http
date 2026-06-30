@@ -1,0 +1,12 @@
+###
+POST http://localhost:8081/api/admin/v1/convenios
+Content-Type: application/json
+
+{
+  "nome": "Unimed Premium",
+  "cnpj": "12345678000199",
+  "status": true
+}
+
+<> 2026-06-30T104544.201.json
+
